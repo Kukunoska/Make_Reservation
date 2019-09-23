@@ -1,0 +1,381 @@
+body {
+	margin:0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+ /* Header */
+.header {
+	position: relative;
+	margin-top: 0;
+}
+.header .imgHeader{
+	width: 100%;
+}
+.imgHeader {
+	width: 100%;
+	height: auto;
+	
+}
+.textHeader {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	width: 80%;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	animation: textHeader 3s ease;	
+}
+.textHeader a{
+	text-decoration: none;
+	color: white;
+}
+.textHeader a h1 {
+	font-size: 45px;
+	text-align: center;
+}
+@keyframes textHeader {
+	from {top: 25%;}
+	to {top: 40%}
+}
+@-webkit-keyframes textHeader {
+    form {-webkit-top: 25%;}
+    to {-webkittop: 40%;}
+}
+/* End of Header */
+
+
+/* Navigation menu */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+}
+ul li{
+	float: left;
+}
+li a {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 19px;
+	color: #4d2600;
+	padding: 18px 30px;
+}
+/* Hover Menu */
+li a:hover {
+	transform: translate(20px, 0px);
+	transition: 0.8s ease;
+	font-weight: bold;
+}
+#login:hover {
+	transform: translate(-40px, 0px);
+	transition: 0.8s ease;
+	font-weight: bold;
+}
+/* End of Navigation menu */
+
+
+/* Main Contetnt */
+/* Home */
+.columnHome {
+	width: 70%;
+	margin: auto;
+}
+.aboutBar {
+	color: #4d2600;
+	padding: 0px, 30px, 30px, 30px;
+}
+.aboutBar p {
+	font-size: 19px;
+	text-align: justify;
+}
+/* End of Home */
+
+/* Reservation */
+.choice, .calendar, .price, .makeReservation {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+.columnReservation{
+	width: 70%;
+	margin: auto;
+}
+h3 {
+	color: #4d2600;
+	padding-top: 30px;
+}
+.selectManu{
+	padding: 10px;
+	outline: none;
+}
+.inputCalendar{
+	padding: 10px;
+	outline: none;
+}
+select:focus, input[type=text]:focus {
+    border: 1px solid #ffdab3;
+}
+.btnPrice {
+	background-color: #ffdab3;
+	padding: 12px 30px;
+	border: none;
+	color: #4d2600;
+	font-weight: bold;
+	outline: none;
+}
+.btnMakeReservation {
+	background-color: #ffdab3;
+	padding: 12px 30px;
+	border: none;
+	color: #4d2600;
+	font-weight: bold;
+	outline: none;
+}
+.btnPrice:hover, .btnMakeReservation:hover {
+	background-color:#ffce99;
+	cursor: pointer;
+}
+.alertMessage {
+	display: none;
+	padding: 15px;
+    background-color: #ff9800;
+	color: white;
+	width: 60%;
+}
+.alertMsg {
+	display: none;
+	padding: 10px;
+	background-color: #ff9800;
+	color: white;
+}
+.closeBtn {
+	margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closeBtn:hover {
+	color: black;
+}
+.divPrice {
+	clear: both;
+}
+#result {
+	text-align: justify;
+}
+/* End of Reservation */
+
+/*Report*/
+.columnReport {
+	width: 70%;
+	margin: auto;
+	padding-top: 50px;
+} 
+#reportTable {
+	border-collapse: collapse;
+	width: 100%;
+} 
+#reportTable td, #reportTable th {
+    border: 1px solid #ffb566;
+    padding: 8px;
+}
+#reportTable td {
+	color: #4d2600;
+}
+#reportTable tr:nth-child(even) {
+	background-color: rgb(255, 255, 204);
+}
+#reportTable tr:hover {
+	background-color: #ffdab3;
+}
+#reportTable th {
+	width: 33%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: left;
+    background-color: #ffce99;
+    color: #4d2600;
+}
+/*End of Report*/
+/*End of  Main Contetnt*/
+
+
+/* Footer */
+.footer {
+	padding: 15px;
+	text-align: center;
+	background-color: rgb(255, 255, 204);
+	color: #4d2600;
+	margin-top: 200px;
+}
+/* End of Footer */
+
+
+/* Meadia Queries */
+@media screen and (max-width: 1298px) {
+	.textHeader {
+		top: 38%;
+	}
+	@keyframes textHeader {
+        from {top: 20%;}
+        to {top: 38%;}
+    }
+    @-webkit-keyframes textHeader {
+        form {-webkit-top: 20%;}
+        to {-webkit-top: 38%;}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.textHeader {
+		top: 36%;
+	}
+	@keyframes textHeader {
+        from {top: 20%;}
+        to {top: 36%;}
+    }
+    @-webkit-keyframes textHeader {
+        form {-webkit-top: 20%;}
+        to {-webkit-top: 36%;}
+	}
+
+	.columnHome, .columnReservation, .columnReport {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 932px) {
+	.aboutBar p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.textHeader {
+		top: 33%;
+	}
+	@keyframes textHeader {
+        from {top: 20%;}
+        to {top: 33%;}
+    }
+    @-webkit-keyframes textHeader {
+        form {-webkit-top: 20%;}
+        to {-webkit-top: 33%;}
+	}
+
+	.columnHome, .columnReservation, .columnReport {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .textHeader {
+		top: 30%;
+    }
+    @keyframes textHeader {
+        from {top: 20%;}
+        to {top: 30%;}
+    }
+    @-webkit-keyframes textHeader {
+        form {-webkit-top: 20%;}
+        to {-webkit-top: 30%;}
+	}
+	.columnRight p{
+		font-size: 17px;
+	}
+	
+	.columnHome, .columnReservation, .columnReport {
+		width: 100%;
+		margin: 0;
+		padding-left:  50px;
+		padding-right: 50px;
+	}
+	.choice, .calendar, .price, .makeReservation {
+		float: none;
+		margin-bottom: 5px;
+	}
+	select, input[type=text], .btnPrice, .btnMakeReservation {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 716px) {
+	.textHeader {
+		top: 20%;
+	}
+	@keyframes textHeader {
+        from {top: 15%;}
+        to {top: 20%;}
+    }
+    @-webkit-keyframes textHeader {
+        form {-webkit-top: 15%;}
+        to {-webkit-top: 20%;}
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.textHeader {
+		top: 18%;
+	}
+	@keyframes textHeader {
+        from {top: 10%;}
+        to {top: 18%;}
+	}
+	@-webkit-keyframes textHeader {
+        form {-webkit-top: 10%;}
+        to {-webkit-top: 18%;}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.textHeader a h1 {
+		font-size: 40px;
+	}
+    .textHeader {
+        top: 19%;
+    }
+    @keyframes textHeader {
+        from {top: 5%;}
+        to {top: 19%;}
+	}
+	@-webkit-keyframes textHeader {
+        form {-webkit-top: 5%;}
+        to {-webkit-top: 19%;}
+	}
+}
+@media screen and (max-width: 560px) {
+	.textHeader {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 524px) {
+	ul li {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.columnHome, .columnReservation, .columnReport {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.choice, .calendar, .price, .makeReservation {
+		float: none;
+		margin-bottom: 5px;
+	}
+	select, input[type=text], .btnPrice, .btnMakeReservation {
+		width: 100%;
+	}
+}
+
